@@ -7,9 +7,10 @@
   <style>
     :root { --ink:#5a2d20; --plum:#774052; --plum-dark:#5c2f3e; --cream:#ead8bd; --cream-light:#fffaf1; --sky:#e4f3ff; --line:#89654f; --muted:#7a6658; }
     * { box-sizing:border-box; }
-    body { margin:0; padding:18px; background:transparent; color:var(--ink); font-family:"Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif; }
+    html, body { margin:0; padding:0; background:transparent !important; }
+    body { padding:6px; color:var(--ink); font-family:"Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif; }
     button,input,textarea { font:inherit; }
-    .widget { position:relative; isolation:isolate; overflow:hidden; max-width:1180px; margin:auto; padding:22px; border:1px solid #d0e6f6; background:var(--sky); box-shadow:0 8px 22px #50677a14; }
+    .widget { position:relative; isolation:isolate; overflow:hidden; max-width:1180px; margin:auto; padding:0; border:0; background:transparent; box-shadow:none; }
     .quote-card, .list-toggle, .quote-list { border:1.5px solid var(--line); background:linear-gradient(105deg,#ead8bd,#f6ead7 46%,#ead8bd); }
     .quote-card { position:relative; display:grid; grid-template-columns:190px minmax(200px,1fr) auto; gap:18px; align-items:center; min-height:108px; padding:20px 18px; overflow:hidden; }
     .blossoms { position:absolute; left:10px; top:4px; color:#d99a9d; font-size:19px; letter-spacing:-8px; transform:rotate(-10deg); opacity:.9; }
@@ -59,7 +60,7 @@
     .danger { margin-right:auto; color:#a12929; border-color:#bb7373; }
     .primary { color:#fff; border-color:var(--plum); background:var(--plum); }
     .hint { color:var(--muted); font-size:12px; margin:8px 0 0; }
-    @media (max-width:780px) { body { padding:8px; } .widget { padding:12px; } .quote-card { grid-template-columns:1fr; gap:12px; padding-top:29px; } .identity { padding:0 0 10px; border-right:0; border-bottom:1px solid #a98368; } .quote-wrap { text-align:left; } .controls { justify-content:flex-start; } blockquote { width:100%; font-size:18px; white-space:normal; text-align:center; } }
+    @media (max-width:780px) { body { padding:4px; } .widget { padding:0; } .quote-card { grid-template-columns:1fr; gap:12px; padding-top:29px; } .identity { padding:0 0 10px; border-right:0; border-bottom:1px solid #a98368; } .quote-wrap { text-align:left; } .controls { justify-content:flex-start; } blockquote { width:100%; font-size:18px; white-space:normal; text-align:center; } }
     @media (max-width:440px) { .controls button:not(.heart) { flex:1; } .summary-help { display:none; } }
     @media (prefers-reduced-motion:reduce) { * { transition:none!important; animation:none!important; } .leaf-field { display:none; } }
   </style>
